@@ -1,0 +1,57 @@
+version: 4.0.77
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Scroll down and click on "Settings".
+    commands:
+      - command: scroll-until-text
+        text: Settings
+        direction: down
+      - command: hover-text
+        text: Settings
+        description: link at the bottom of the page
+        action: click
+  - prompt: Scroll down and click on "Settings".
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Settings
+        direction: down
+      - command: hover-text
+        text: Settings
+        description: link at the bottom of the page
+        action: click
+  - prompt: Navigate to "Languages".
+    commands:
+      - command: scroll-until-text
+        text: Languages
+        direction: down
+      - command: hover-text
+        text: Languages
+        description: link or section in the settings
+        action: click
+  - prompt: Navigate to "Languages".
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Languages
+        direction: down
+      - command: hover-text
+        text: Languages
+        description: link in the settings menu
+        action: click
+  - prompt: Navigate to "Languages".
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Languages
+        direction: down
+      - command: hover-text
+        text: Languages
+        description: link in the settings menu
+        action: click
