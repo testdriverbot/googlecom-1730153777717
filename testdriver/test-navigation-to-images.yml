@@ -1,0 +1,26 @@
+version: 4.0.77
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+  - prompt: Click on "Images" in the header.
+    commands:
+      - command: hover-text
+        text: Images
+        description: link in the header
+        action: click
+  - prompt: Click on "Images" in the header.
+    commands:
+      - command: hover-text
+        text: Images
+        description: link in the header
+        action: click
+  - prompt: Click on "Images" in the header.
+    commands:
+      - command: hover-text
+        text: Images
+        description: link in the header
+        action: click
