@@ -1,0 +1,22 @@
+version: 4.0.77
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on the search bar.
+    commands:
+      - command: hover-text
+        text: Search Google or type a URL
+        description: main google search
+        action: click
+  - prompt: Type "Test".
+    commands:
+      - command: type
+        text: Test
+  - prompt: >-
+      Assert that search suggestions appear below the bar.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: search suggestions are visible below the search bar
